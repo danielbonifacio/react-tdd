@@ -1,0 +1,514 @@
+{
+  "customers": [
+    {
+      "nonperforming": true,
+      "id": "1",
+      "profile": {
+        "email": "contato@danielbonifacio.com.br",
+        "gender": "male",
+        "name": "Daniel Bonifacio",
+        "birthdate": "01/04/1999"
+      },
+      "mothersName": "Patricia Bonifacio",
+      "balance": {
+        "credit": {
+          "available": 5000,
+          "total": 8000
+        }
+      },
+      "bestTransactionDay": 1,
+      "documents": {
+        "cpf": "11541839714",
+        "rg": "3796129"
+      },
+      "phones": [
+        {
+          "type": "mobile",
+          "number": "27999001143"
+        }
+      ],
+      "invoices": [
+        {
+          "due": "20/10/2019",
+          "amount": 400
+        },
+        {
+          "due": "20/11/2019",
+          "amount": 1600
+        }
+      ],
+      "addresses": [
+        {
+          "number": 321,
+          "neighborhood": "Praia da Costa",
+          "city": "Vila Velha",
+          "street": "Av. Hugo Musso",
+          "state": "ES"
+        }
+      ],
+      "due": {
+        "day": "20"
+      }
+    },
+    {
+      "nonperforming": false,
+      "id": "2",
+      "profile": {
+        "email": "julia@castaway.com",
+        "gender": "female",
+        "name": "Julia Castaway",
+        "birthdate": "01/04/1985"
+      },
+      "mothersName": "Joana D'ark",
+      "balance": {
+        "credit": {
+          "available": 3580,
+          "total": 12420
+        }
+      },
+      "bestTransactionDay": 20,
+      "documents": {
+        "cpf": "11522365247",
+        "rg": "1235849"
+      },
+      "phones": [
+        {
+          "type": "mobile",
+          "number": "27999885565"
+        }
+      ],
+      "invoices": [
+        {
+          "due": "20/10/2019",
+          "amount": 400
+        },
+        {
+          "due": "20/11/2019",
+          "amount": 1600
+        }
+      ],
+      "addresses": [
+        {
+          "number": 321,
+          "neighborhood": "Praia da Costa",
+          "city": "Vila Velha",
+          "street": "Av. Hugo Musso",
+          "state": "ES"
+        }
+      ],
+      "due": {
+        "day": "20"
+      }
+    }
+  ],
+  "plastic": [
+    {
+      "id": "3",
+      "customerId": "1",
+      "finalNumber": 5555,
+      "type": "credit",
+      "status": "active"
+    }
+  ],
+  "teds": [
+    {
+      "numero": 1111,
+      "key": 1,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Confirmado"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "data_agendamento": "15/01/2019",
+      "detalhe": "mais um belo detalhe",
+      "finalidade_ted": 10,
+      "cpf_cnpj_remetente": "1111222/000004",
+      "codigo_banco_favorecido": "2456456-5",
+      "conta_corrente_favorecido": "12136574984-8",
+      "cpf_cnpj_favorecido": "22222222/5858",
+      "numero_transferencia_interno": "DljaKLJnhokjljvfhjDGpJ",
+      "id_empresa": 3,
+      "numero_lydians": 2321,
+      "codigo_lydians": 8334,
+      "data_resposta": "20/08/2019 17:35:09",
+      "sucesso": "Não",
+      "msg_resposta": "Key informada é inválida! Certificado não localizado.",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 2,
+      "tipo": [
+        "Recebido"
+      ],
+      "status": [
+        "Aguardando Resposta"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 3,
+      "tipo": [
+        "Recebido"
+      ],
+      "status": [
+        "Confirmado"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 4,
+      "tipo": [
+        "Recebido"
+      ],
+      "status": [
+        "Devolvido",
+        "Confirmado"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 5,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Devolvido"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 6,
+      "tipo": [
+        "Recebido"
+      ],
+      "status": [
+        "Devolvido"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 7,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Confirmado"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 8,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Devolvido",
+        "Confirmado"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 9,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Aguardando Resposta"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 10,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Devolvido",
+        "Confirmado"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 11,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Aguardando Resposta"
+      ],
+      "valor": "R$ 234,50",
+      "data": "23/07/1986",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    },
+    {
+      "key": 12,
+      "tipo": [
+        "Envio"
+      ],
+      "status": [
+        "Devolvido",
+        "Confirmado"
+      ],
+      "valor": "R$ 234,50",
+      "data": "28/08/2019",
+      "rem_ag_cc": "1-403053505",
+      "fav_ag_cc": "1-409293001",
+      "fav_nome": "Marcio de souza sfalsin"
+    }
+  ],
+  "customer_service": [
+    {
+      "nonperforming": false,
+      "id": "2",
+      "profile": {
+        "email": "julia@castaway.com",
+        "gender": "female",
+        "name": "Julia Castaway",
+        "birthdate": "01/04/1985"
+      },
+      "mothersName": "Joana D'ark",
+      "balance": {
+        "credit": {
+          "available": 3580,
+          "total": 12420
+        }
+      },
+      "bestTransactionDay": 20,
+      "documents": {
+        "cpf": "11522365247",
+        "rg": "1235849"
+      },
+      "phones": [
+        {
+          "type": "mobile",
+          "number": "27999885565"
+        }
+      ],
+      "invoices": [
+        {
+          "due": "20/10/2019",
+          "amount": 400
+        },
+        {
+          "due": "20/11/2019",
+          "amount": 1600
+        }
+      ],
+      "addresses": [
+        {
+          "number": 321,
+          "neighborhood": "Praia da Costa",
+          "city": "Vila Velha",
+          "street": "Av. Hugo Musso",
+          "state": "ES"
+        }
+      ],
+      "due": {
+        "day": "20"
+      },
+      "date": "30/08 14:51"
+    },
+    {
+      "nonperforming": true,
+      "id": "1",
+      "profile": {
+        "email": "contato@danielbonifacio.com.br",
+        "gender": "male",
+        "name": "Daniel Bonifacio",
+        "birthdate": "01/04/1999"
+      },
+      "mothersName": "Patricia Bonifacio",
+      "balance": {
+        "credit": {
+          "available": 5000,
+          "total": 8000
+        }
+      },
+      "bestTransactionDay": 1,
+      "documents": {
+        "cpf": "11541839714",
+        "rg": "3796129"
+      },
+      "phones": [
+        {
+          "type": "mobile",
+          "number": "27999001143"
+        }
+      ],
+      "invoices": [
+        {
+          "due": "20/10/2019",
+          "amount": 400
+        },
+        {
+          "due": "20/11/2019",
+          "amount": 1600
+        }
+      ],
+      "addresses": [
+        {
+          "number": 321,
+          "neighborhood": "Praia da Costa",
+          "city": "Vila Velha",
+          "street": "Av. Hugo Musso",
+          "state": "ES"
+        }
+      ],
+      "due": {
+        "day": "20"
+      },
+      "date": "30/08 14:51"
+    }
+  ],
+  "history": [
+    {
+      "customerId": "1",
+      "header": "Atendimento (Nina Fonseca)",
+      "date": "30/08/2019",
+      "time": "10h55",
+      "body": "Solicitado aumento de limite. O cliente foi informado que não haveria possibilidade, pois haveria menos de 3 meses desde a última solicitação. Solicitado aumento de limite. O cliente foi informado que não haveria possibilidade, pois haveria menos de 3 meses desde a última solicitação.",
+      "status": "finished",
+      "badge": "process"
+    },
+    {
+      "customerId": "1",
+      "header": "Sistema",
+      "date": "30/08/2019",
+      "time": "11h15",
+      "body": "Aumento de limite negado.",
+      "status": "finished",
+      "badge": "denied"
+    },
+    {
+      "customerId": "1",
+      "header": "Bloqueio manual",
+      "date": "31/08/2019",
+      "time": "02h25",
+      "reason": "Roubo",
+      "status": "finished",
+      "badge": "manual_block"
+    },
+    {
+      "customerId": "1",
+      "header": "Solicitado novo cartão",
+      "date": "31/08/2019",
+      "time": "03h20",
+      "status": "finished",
+      "badge": "ask"
+    },
+    {
+      "customerId": "1",
+      "header": "Preparando novo cartão",
+      "status": "pending"
+    },
+    {
+      "customerId": "1",
+      "header": "Cartão chegou",
+      "date": "01/09/2019",
+      "time": "20h20",
+      "status": "finished",
+      "badge": "process"
+    }
+  ],
+  "proposal": [
+    {
+      "key": "1",
+      "name": "John Brown",
+      "age": 32,
+      "cpf": 11111111111,
+      "profession": "Estudante",
+      "status": "Aprovado",
+      "address": "Av. Hugo Musso, 321, Praia da Costa, Vila Velha, ES",
+      "initialDate": "18/09/2019 11:00:00",
+      "endDate": "28/09/2019 11:00:00",
+      "flags": [
+        "Universitário",
+        "Risco"
+      ]
+    },
+    {
+      "key": "2",
+      "name": "Joe Black",
+      "age": 22,
+      "cpf": 11111111111,
+      "profession": "Desenvolvedor",
+      "status": "Aprovado",
+      "address": "Av. Hugo Musso, 321, Praia da Costa, Vila Velha, ES",
+      "initialDate": "18/09/2019 11:00:00",
+      "endDate": "28/09/2019 11:00:00",
+      "flags": [
+        "Universitário",
+        "Risco"
+      ]
+    },
+    {
+      "key": "3",
+      "name": "Joe Black",
+      "age": 22,
+      "cpf": 11111111111,
+      "profession": "Desenvolvedor",
+      "status": "Pendente",
+      "address": "Av. Hugo Musso, 321, Praia da Costa, Vila Velha, ES",
+      "initialDate": "18/09/2019 11:00:00",
+      "endDate": "28/09/2019 11:00:00",
+      "flags": [
+        "Risco"
+      ]
+    },
+    {
+      "key": "4",
+      "name": "Joe Black",
+      "age": 22,
+      "cpf": 11111111111,
+      "profession": "Desenvolvedor",
+      "status": "Incompleto",
+      "address": "Av. Hugo Musso, 321, Praia da Costa, Vila Velha, ES",
+      "initialDate": "18/09/2019 11:00:00",
+      "endDate": "28/09/2019 11:00:00",
+      "flags": []
+    }
+  ]
+}
