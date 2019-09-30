@@ -1,12 +1,15 @@
 import React from 'react'
 import { Tag } from 'antd'
 
+export const getColor = (color) => color === 'Universitário'
+  ? 'geekblue'
+  : 'red'
+
 const renderTags = flags => (
-  <span data-testid="">
+  <span>
     {flags.map(flag => {
-      const color = flag === 'Universitário' ? 'geekblue' : 'red'
       return (
-        <Tag color={color}
+        <Tag color={getColor(flag)}
           key={flag}>
           {flag.toUpperCase()}
         </Tag>

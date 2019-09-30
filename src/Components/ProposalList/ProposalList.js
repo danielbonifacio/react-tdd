@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { Component, useState } from 'react'
 import { connect } from 'react-redux'
-import { Table } from 'antd'
+import { Input } from 'antd'
 import { fetchProposal } from '../../Store/ProposalList'
 import renderTags from './renderTags'
+import Table from './ProposalTable'
 
-const ProposalList = ({ proposals, fetchProposal }) => {
-  const columns = [
+export class ProposalList extends Component {
+  columns = [
     {
       title:     'Nome',
       dataIndex: 'name',
@@ -63,15 +64,43 @@ const ProposalList = ({ proposals, fetchProposal }) => {
     }
   ]
 
-  useEffect(fetchProposal, [])
+  state = {
+    search: ''
+  }
 
-  return (
-    <Table size="small"
-      data-testid="table"
-      columns={columns}
-      dataSource={proposals}
-    />
-  )
+  componentDidMount() {
+    this.props.fetchProposal()
+  }
+
+  handleTableChange = () => {
+    const test = 'test'
+    return test
+  }
+
+  handleChange = e => {
+    this.setState({
+      search: e.target.value
+    })
+  }
+
+  render() {
+    return (
+      <>
+        <Input
+          data-testid="input-search"
+          placeholder={"Pesquisar"}
+          onChange={this.handleChange}
+          value={this.state.search}
+        />
+        <Table size="small"
+          data-testid="table"
+          columns={this.columns}
+          dataSource={this.props.proposals}
+          onChange={this.handleTableChange}
+        />
+      </>
+    )
+  }
 }
 
 const mapStateToProps = state => ({

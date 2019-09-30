@@ -10,9 +10,9 @@ export const fetchProposalStarted = () => ({
   type: FETCH_PROPOSAL_STARTED
 })
 
-export const fetchProposalSuccess = proposal => ({
+export const fetchProposalSuccess = proposals => ({
   type: FETCH_PROPOSAL_SUCCESS,
-  proposal
+  proposals
 })
 
 export const fetchProposalFailure = message => ({
@@ -27,7 +27,7 @@ export const approveProposalSuccess = proposal => ({
 
 export const fetchProposal = () => dispatch => {
   dispatch(fetchProposalStarted)
-  const api = 'http://localhost:3000'
+  const api = 'http://localhost:4000'
   axios
     .get(`${api}/proposal`)
     .then(res => {
@@ -40,7 +40,7 @@ export const fetchProposal = () => dispatch => {
 
 export const approveProposal = id => dispatch => {
   dispatch(approveProposalSuccess)
-  const api = 'http://localhost:3000'
+  const api = 'http://localhost:4000'
   axios
     .patch(`${api}/proposal/${id}`, {
       status: 'Aprovado'
@@ -57,7 +57,7 @@ export const approveProposal = id => dispatch => {
 export default function (state = [], action) {
   switch (action.type) {
     case FETCH_PROPOSAL_SUCCESS:
-      return action.proposal
+      return action.proposals
     case FETCH_PROPOSAL_FAILURE:
       return state
     case APPROVE_PROPOSAL_SUCCESS:
