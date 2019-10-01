@@ -112,6 +112,6 @@ describe('ProposalList Store', () => {
   })
 
   it('returns default state', () => {
-    expect(reducer([], { type: null })).toEqual([])
+    expect(reducer(undefined, { type: null })).toEqual([])
   })
 })
