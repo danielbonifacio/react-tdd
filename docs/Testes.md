@@ -151,7 +151,7 @@ import '@testing-library/jest-dom/extend-expect'
 
 class MyComponent extends Component {
     state = {
-        showDiv: ''
+        showDiv: false
     }
 
     handleClick = e => {
@@ -178,7 +178,7 @@ class MyComponent extends Component {
     }
 }
 
-it('should update input value on change', async () => {
+it('should render div based on `showDiv` prop', async () => {
     const { getByTestId } = render(<MyComponent />)
     const preventDefault = jest.fn()
     act(() => {
