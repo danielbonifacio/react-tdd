@@ -8,6 +8,17 @@ Lista de sugestões para testar:
 - Reducers
 - Actions
 
+## Sugestões e dicas
+
+Testes existem para garantir o funcionamento de cada feature do sistema. **A cobertura é uma consequência, não o motivo.**
+
+- Ao desenvolver uma feature, crie a respectiva referência nos testes — mesmo que, por enquanto, sem assert;
+- Crie testes que fazem sentido, não apenas testes que passam na cobertura;
+- Um teste, na maioria das vezes, espera um comportamento de uma ação, inclua o assert;
+- Mocke métodos que não são importantes para o teste;
+- Se preocupe com detalhes. Se o método retorna em uppercase, crie um teste para isso;
+- Seja objetivo. Se tá testando um método puro, não precisa renderizar o componente, apenas instanciar a classe.
+
 ## Componentes
 
 ### Baseados em classe
